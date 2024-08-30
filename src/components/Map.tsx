@@ -11,19 +11,20 @@ export default function Map() {
   const [shipX, setShipX] = useState(460);
   const [shipY, setShipY] = useState(280);
 
+  console.log(911)
   {
     /* // Stage - is a div wrapper
   // Layer - is an actual 2d canvas element, so you can have several layers inside the stage
   // Rect and Circle are not DOM elements. They are 2d shapes on canvas */
   }
   return (
-    <Stage width={1500} height={window.innerHeight}>
+    <Stage width={1500} height={911}>
       <Layer>
         <Image
           image={baseImage}
           alt="panama map"
           width={1200}
-          height={window.innerHeight}
+          height={911}
         />
       </Layer>
       <Layer>
@@ -31,7 +32,7 @@ export default function Map() {
           image={captionsImage}
           alt="captions"
           width={1200}
-          height={window.innerHeight}
+          height={911}
         />
       </Layer>
       <Layer>
@@ -39,7 +40,7 @@ export default function Map() {
           image={geoImage}
           alt="panama geo"
           width={1200}
-          height={window.innerHeight}
+          height={911}
         />
         <Image
           x={shipX}
